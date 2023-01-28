@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <MainViewApp></MainViewApp>
   </div>
 </template>
+<script>
+// @ is an alias to /src
+import MainViewApp from "@/views/MainViewApp.vue";
+export default {
+  name: "Main",
+  components: {
+    MainViewApp,
+  },
+};
+</script>
 
 <style>
 #app {
